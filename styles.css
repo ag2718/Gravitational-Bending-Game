@@ -1,0 +1,9 @@
+body {
+    background-color: pink;
+}
+
+#game_canvas {
+    border: 5px solid #d3d3d3;
+
+    margin-left: 200px;
+}
