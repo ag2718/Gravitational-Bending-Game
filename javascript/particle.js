@@ -8,8 +8,8 @@ class Light {
 }
 
 Light.prototype.past = function (){
-    xp = this.x - c * Math.cos(this.angle);
-    yp = this.y - c * Math.sin(this.angle);
+    xp = this.x - c*Math.cos(this.angle);
+    yp = this.y - c*Math.sin(this.angle);
     return [xp, yp];
 };
 Light.prototype.dist = function (x, y, mass) {
@@ -18,6 +18,7 @@ Light.prototype.dist = function (x, y, mass) {
 
 // calculating impact parameter (distance of closest approach)
 Light.prototype.b = function (mass, xp, yp) {
+    // 
     return Math.abs(mass.y + (mass.x * (yp - this.y)) / (this.x - xp) - yp - (xp * (yp - this.y)) / (this.x - xp)) / Math.sqrt(1 + ((yp - this.y) / (this.x - xp)) ** 2);
 }
 
@@ -44,8 +45,8 @@ Light.prototype.dphi = function (list_masses) {
         r_vec = [this.x - object.x, this.y - object.y, 0]
         v_vec = [this.x - xp, this.y - yp, 0]
         if (r_vec[0]*v_vec[1] - r_vec[1]*v_vec[0] < 0){
-            dphi *= -1
-        }
+            dpdr *= -1
+         }
         dphi += dpdr * dr;
     }
     return dphi

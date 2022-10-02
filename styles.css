@@ -1,9 +1,19 @@
 body {
+    margin: 0;
+    padding: 0;
     background-color: pink;
+    font-family: "Trebuchet MS", sans-serif;
 }
 
 #game_canvas {
     border: 5px solid #d3d3d3;
 
     margin-left: 200px;
+}
+
+#overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: black;
 }
