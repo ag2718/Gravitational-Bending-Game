@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>HackMIT 2022</title>
+    <title>HackMIT 2022: Geodesic Kaleidoscope</title>
     <link rel="stylesheet" href="/styles.css" />
 
     <script src="javascript/mouse.js"></script>
@@ -11,31 +11,36 @@
     <script src="javascript/mass.js"></script>
     <script src="javascript/particle.js"></script>
     <script src="javascript/events.js"></script>
+    <script src="javascript/overlay.js"></script>
 </head>
 
-<body>
-    <!--<div id="overlay">
 
-    </div>-->
-
-
-    <h1>Gravitational Bending Classroom Webapp</h1>
-    <canvas id="game_canvas" width="1000" height="500">
-        Your browser does not support the HTML canvas tag.
-    </canvas>
-    
-    <div>
-        <div id="black_hole"></div>
-        <div id="blue_giant"></div>
-        <div id="main_sequence"></div>
-        <div id="white_dwarf"></div>
-        <div id="planet"></div>
+<body id = "overlaybody">
+    <div id="wrapperstrong">
+    </div>
+        <h1><div class='title'>HACKMIT 2022: 
+            <br>
+            GEODESIC KALEIDOSCOPE</div></h1>
+        <p>
+        <div id = "overlay">
+            Welcome To Space.
+        </div>   
+        <!-- <br>
+        Peter Parker is emitting light from his laser somewhere in a galaxy far far away.
+        <br>
+        Your job is to get that light beam to Mr. Wayne in his home in The Shire.
+        <br>
+        To do this, use your knowledge of space-time warping to curve light and get the important message across the universe! 
+        <br>  -->
+        <!-- Press the button to play! -->
+        </p> 
+    <div id="enter_button">
+        <a href="app.html"><img src="assets/enter.png" width="300px"></img></a>
     </div>
 
-    <script>
-        myApp = new App("game_canvas");
-        myApp.main();
-    </script>
+    <div id="instructions_button">
+        <a href="app.html"><img src="assets/instructions.png" width="300px"></img></a>
+    </div>
 </body>
 
 </html>

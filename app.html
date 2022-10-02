@@ -1,0 +1,80 @@
+</html><!DOCTYPE html>
+<html>
+
+<head>
+    <title>HackMIT 2022</title>
+    <link rel="stylesheet" href="/styles.css" />
+
+    <script src="javascript/mouse.js"></script>
+    <script src="javascript/constants.js"></script>
+    <script src="javascript/app.js"></script>
+    <script src="javascript/mass.js"></script>
+    <script src="javascript/particle.js"></script>
+    <script src="javascript/events.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+    </div>
+    <div class="message", id ="loss">
+        
+        You lost!
+        <div class="button2", onclick="movetoindex()">
+            Restart
+        </div>
+    </div>   
+    <div class="message", id ="win">
+        
+        You won!
+        <div class="button2", onclick="movetoindex()">
+            Restart
+        </div>
+    </div>  
+
+    <div id="game_title">
+        <h1>Geodesic Kaleidoscope</h1>
+    </div>
+       
+    <canvas id="game_canvas" width="1000" height="500">
+        Your browser does not support the HTML canvas tag.
+    </canvas>
+    
+    <div id="butt">
+        <div id="black_hole", class="button", onclick='cursor("black_hole")'>
+            Black Hole
+        </div>
+        <br>
+        <div id="blue_giant", class="button", onclick='cursor("blue_giant")'>
+            Blue Giant
+        </div>
+        <br>
+        <div id="main_sequence", class="button", onclick='cursor("main_sequence")'>
+            Main Sequence
+        </div>
+        <br>
+        <div id="white_dwarf", class="button", onclick='cursor("white_dwarf")'>
+            White Dwarf
+        </div>
+        <div id="planet", class="button", onclick='cursor("planet")'>
+            Planet
+        </div>
+        <div id = "deselect", class="button", onclick='cursor(1)'>
+            Deselect
+        </div>
+        <br>
+        <br>
+        <div id = "play", class="button", onclick='playy()'>
+            Play
+        </div>
+
+    </div>
+
+
+    <script>
+        myApp = new App("game_canvas");
+        myApp.main();
+    </script>
+
+</body>
+
+</html>

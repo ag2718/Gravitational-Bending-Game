@@ -1,19 +1,197 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: pink;
+    background-image: url('./assets/jwst.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: "Trebuchet MS", sans-serif;
+}
+
+#game_title {
+    font-size: 35px;
+    margin-top: 50px;
+    margin-left: 25vw;
+    color: whitesmoke;
+    text-align: justify;
+    
+
 }
 
 #game_canvas {
     border: 5px solid #d3d3d3;
 
-    margin-left: 200px;
+    margin-left: 120px;
 }
 
 #overlay {
-    width: 100%;
-    height: 100%;
+    /* padding: 20px 180px; */
+    margin-left: 575px;
+    margin-top: 57vh;
+    text-align: center;
     position: fixed;
-    background-color: black;
+    font-size: 1.5em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
 }
+
+#enter_button {
+    color: white;
+    position: fixed;
+    margin-left: 410px;
+    margin-top: 450px;
+}
+
+#instructions_button {
+    color: white;
+    position: fixed;
+    margin-left: 655px;
+    margin-top: 450px;
+}
+
+#overlaybody {
+    background-image: url('./assets/amongusgalaxy.png');
+}
+.message {
+    padding:35px;
+    width: 20vw;
+    height: 20vh;
+    position:fixed;
+    visibility:hidden;
+    top:40vh;
+    left:40vw;
+    background-color: rgba(0,0,0,.5);
+    color: #fff;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    margin: 5px;
+    
+}
+
+.button2 {
+    width: 150px;
+    background-color: rgba(0,0,0,.7);
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 40px;
+
+    
+}
+
+.button {
+    width: 150px;
+    background-color: lightblue; /* Green */
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+  }
+
+#butt {
+    height: 100px;
+    margin: 50px auto;
+    margin-top: -60vh; 
+    margin-left: 81vw;
+}
+
+#deselect {
+    background-color: #aaeebb;
+}
+#play {
+    background-color: #aaeebb;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+#wrapper {
+    padding: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    background-color: rgba(0,0,0,0.5);
+    z-index: -1;
+}
+
+#wrapperstrong {
+    padding: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* .cyber-text {
+    position: relative;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 50px;
+} */
+/* .title{ 
+    font-size: 80px;
+    letter-spacing: -1px; 
+    color: #DFBF84;  
+    margin-left: 15vw;
+    margin-top: 10vh; 
+    position: fixed;
+    text-align: center;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa;
+    /* 0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa; */
+/* } */ 
+
+.title {
+    animation: flicker 7s infinite alternate;
+    color: #fff;
+    font-size: 60px;
+    letter-spacing: -1px; 
+    margin-left: 25vw;
+    margin-top: 31vh; 
+    position: fixed;
+    text-align: center;
+  }
+
+@keyframes flicker {
+    100% {
+      text-shadow:
+        0 0 2px #fff,
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px rgb(0, 225, 255),
+        0 0 45px rgb(0, 225, 255);
+    }
+    0% {       
+      text-shadow: none;
+    }
+  }
